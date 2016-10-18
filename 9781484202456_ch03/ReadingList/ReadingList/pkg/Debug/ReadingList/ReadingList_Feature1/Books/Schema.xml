@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Books" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Books" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+
+
+
+
+
+      <ContentType ID="0x0100b3cac1eabbaf42cca92916c439317fb7" Name="ListFieldsContentType">
+        <FieldRefs>
+
+
+
+
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" Name="URL" />
+          <FieldRef ID="{ec5bdad4-c9ef-45aa-8650-e6213fb1428d}" Name="Background" />
+          <FieldRef ID="{baf5e8e4-2c81-48b7-8185-f568c6a3d0d9}" Name="Order1" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+
+
+
+
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" Name="URL" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="URL" Group="$Resources:core,Base_Columns;" Type="URL" DisplayName="$Resources:core,URL;" Required="TRUE" />
+      <Field Name="Background" ID="{ec5bdad4-c9ef-45aa-8650-e6213fb1428d}" DisplayName="Background" Type="Choice" FillInChoice="FALSE">
+        <CHOICES>
+
+
+
+
+
+
+
+          <CHOICE>White</CHOICE>
+          <CHOICE>Blue</CHOICE>
+          <CHOICE>Red</CHOICE>
+          <CHOICE>Green</CHOICE>
+          <CHOICE>Orange</CHOICE>
+          <CHOICE>Yellow</CHOICE>
+          <CHOICE>Purple</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="Order1" ID="{baf5e8e4-2c81-48b7-8185-f568c6a3d0d9}" DisplayName="Order" Type="Number" />
+    </Fields>
+    <Views>
+
+
+
+
+
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+
+
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="URL" />
+          <FieldRef Name="Background" />
+          <FieldRef Name="Order1" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="2" Name="50ef35ad-7914-4d73-bb7c-3f5a971fa292" DisplayName="Title List" Type="HTML" ReadOnly="TRUE" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Title List.aspx">
+        <ViewFields>
+
+
+
+          <FieldRef Name="Order1" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Created" />
+        </ViewFields>
+        <Query />
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

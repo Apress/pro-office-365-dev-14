@@ -1,0 +1,41 @@
+﻿<Window x:Class="LyncApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls
+            ="clr-namespace:Microsoft.Lync.Controls;assembly=Microsoft.Lync.Controls"
+        xmlns:interop="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+
+        Title="MainWindow" Height="Auto" Width="Auto">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="54" />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <TextBlock Margin="15" Text="View Presence of Selected Contact:" />
+            <ComboBox x:Name="cboContacts" Width="200" Height="25" Margin="0,0,20,0" 
+                      SelectionChanged="cboContacts_SelectionChanged" />
+            <!-- Presence Indicator -->
+            <controls:PresenceIndicator PhotoDisplayMode="Large" x:Name="lyncPresence" />
+            <!-- Start Instant Message -->
+            <controls:StartInstantMessagingButton x:Name="lyncStartMessage" Height="25" 
+                                                  Margin="20,10,10,10" />
+            <!-- Automation Button -->
+            <Button x:Name="btnConversationStart" Content="Start Conversation" Margin="10" 
+                    Click="btnConversationStart_Click" />
+        </StackPanel>
+
+        <!-- Contact controls -->
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,5,0,220" Grid.RowSpan="2">
+            <controls:ContactSearch Width="300" />
+            <!--<controls:ContactList Width="300" />-->
+            <controls:CustomContactList x:Name="lyncCustomList" Width="300" />
+        </StackPanel>
+        
+        <interop:WindowsFormsHost x:Name="formHost" Grid.Row="1" Margin="0,153,0,0" Grid.RowSpan="2">
+            <forms:Panel x:Name="formPanel"></forms:Panel>
+        </interop:WindowsFormsHost>
+    </Grid>
+</Window>

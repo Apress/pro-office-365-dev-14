@@ -1,0 +1,45 @@
+﻿@model SalesLeadMVC.Models.LeadAppointmentViewModel
+
+@{
+    ViewBag.Title = "LeadAppointment";
+}
+
+<h2>Lead Appointment</h2>
+
+@using (Html.BeginForm("LeadAppointment"))
+{
+    @Html.HiddenFor(x => x.leadID)
+    @Html.HiddenFor(x => x.appointmentMessage)
+    <div class="well">
+        <h3>Lead Information</h3>
+        <div style="white-space: pre-line;">
+            @Model.appointmentMessage
+        </div>
+    </div>
+
+    <fieldset>
+        <legend>Set Appointment</legend>
+        <label>Appointment Date:</label><br />
+        @Html.TextBoxFor(x => x.appointmentDate)
+        <input type="button" value="Check Appointments" onclick="checkAppointments();" /><br />
+
+        <input type="submit" value="Set Appointment" style="margin-top:40px;" />
+    </fieldset>
+}
+<div id="currentAppointments" style="margin-top:40px;"></div>
+
+@section scripts
+{
+    <script>
+        function checkAppointments() {
+            var currDate = $('#appointmentDate').val();
+            var url = '/SalesLead/CheckAppointments?appointmentDate=' + currDate.split(' ')[0];
+            
+            $.get(url, function (data) {
+                $('#currentAppointments').html(data);    
+            });
+            return false;
+        }
+    </script>
+}
+

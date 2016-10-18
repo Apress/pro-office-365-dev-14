@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="4b671e25-847a-403e-8556-37e3cc0bcd8a" Scope="Web" Title="CustomTaskList Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-1.9.1.min.map" />
+    <ElementFile Location="Scripts\jquery-1.9.1.min.js" />
+    <ElementFile Location="Scripts\jquery-1.9.1.js" />
+    <ElementFile Location="Scripts\jquery-1.9.1.intellisense.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="CustomTaskListInstance\Elements.xml" />
+    <ElementManifest Location="CustomTaskList\Elements.xml" />
+    <ElementFile Location="CustomTaskList\Schema.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="CustomTaskListInstance\Elements.xml" />
+        <ElementManifest Location="CustomTaskList\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

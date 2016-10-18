@@ -1,0 +1,3 @@
+C:\Books\Office365\Chapter03\CustomTaskList\CustomTaskList\bin\Debug\CustomTaskList.pdb
+C:\Books\Office365\Chapter03\CustomTaskList\CustomTaskList\obj\Debug\CustomTaskList.dll
+C:\Books\Office365\Chapter03\CustomTaskList\CustomTaskList\obj\Debug\CustomTaskList.pdb

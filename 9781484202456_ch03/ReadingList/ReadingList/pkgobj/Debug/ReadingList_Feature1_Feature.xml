@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="f89f1acb-81ed-4e94-9f51-0f46c79cee40" Scope="Web" Title="ReadingList Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\BookWebPart.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-1.9.1.min.map" />
+    <ElementFile Location="Scripts\jquery-1.9.1.min.js" />
+    <ElementFile Location="Scripts\jquery-1.9.1.js" />
+    <ElementFile Location="Scripts\jquery-1.9.1.intellisense.js" />
+    <ElementFile Location="Scripts\WebPart.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementFile Location="Images\EditIcon.png" />
+    <ElementFile Location="Images\GearIcon.png" />
+    <ElementFile Location="Images\ViewIcon.png" />
+    <ElementManifest Location="BooksInstance\Elements.xml" />
+    <ElementManifest Location="Books\Elements.xml" />
+    <ElementFile Location="Books\Schema.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="BooksInstance\Elements.xml" />
+        <ElementManifest Location="Books\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

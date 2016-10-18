@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="f35c2ab3-2aa0-4fe5-b5a5-0879e36a9cb2" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="CustomTaskList_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Books" 
+                OnQuickLaunch="TRUE" 
+                TemplateType="10000" 
+                Url="Lists/Books" 
+                Description="My Reading List">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Beginning WF</Field>
+          <Field Name="URL">http://www.apress.com/9781430224853</Field>
+          <Field Name="Background">Green</Field>
+          <Field Name="Order1">1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Office 2010 Workflow</Field>
+          <Field Name="URL">http://www.apress.com/9781430229049</Field>
+          <Field Name="Background">Blue</Field>
+          <Field Name="Order1">2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Pro Project Management with SharePoint 2010</Field>
+          <Field Name="URL">http://www.apress.com/9781430228295</Field>
+          <Field Name="Background">Orange</Field>
+          <Field Name="Order1">3</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Pro Access 2010 Development</Field>
+          <Field Name="URL">http://www.apress.com/9781430235781</Field>
+          <Field Name="Background">Yellow</Field>
+          <Field Name="Order1">4</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Pro Office 365 Development</Field>
+          <Field Name="URL">http://www.apress.com/9781430240747</Field>
+          <Field Name="Background">Red</Field>
+          <Field Name="Order1">5</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">WinRT Revealed</Field>
+          <Field Name="URL">http://www.apress.com/9781430245841</Field>
+          <Field Name="Background">White</Field>
+          <Field Name="Order1">6</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">HTML5 with Visual Studio 2012</Field>
+          <Field Name="URL">http://www.apress.com/9781430246381</Field>
+          <Field Name="Background">Purple</Field>
+          <Field Name="Order1">7</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

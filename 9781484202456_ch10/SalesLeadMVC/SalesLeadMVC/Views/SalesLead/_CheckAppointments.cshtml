@@ -1,0 +1,31 @@
+﻿@model SalesLeadMVC.Models.CheckAppointmentsViewModel
+
+<fieldset>
+    <legend>Current Appointments</legend>
+    <table width="600">
+        <thead>
+            <tr>
+                <th>
+                    Date
+                </th>
+                <th>
+                    Appointment
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Microsoft.Office365.Exchange.Event appointment in Model.appointments)
+            {
+                <tr>
+                    <td>
+                        @appointment.Start.Value.DateTime
+                    </td>
+                    <td>
+                        @appointment.Subject
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</fieldset>
+

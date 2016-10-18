@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Custom Tasks" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/Custom Tasks" Description="Custom task list used for Chapter 3 demo" Hidden="FALSE"></ListInstance>
+</Elements>

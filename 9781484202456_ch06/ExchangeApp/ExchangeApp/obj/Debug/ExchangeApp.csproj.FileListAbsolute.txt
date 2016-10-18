@@ -1,0 +1,13 @@
+C:\Books\Office365\Chapter05\ExchangeApp\ExchangeApp\bin\Debug\ExchangeApp.exe.config
+C:\Books\Office365\Chapter05\ExchangeApp\ExchangeApp\bin\Debug\ExchangeApp.exe
+C:\Books\Office365\Chapter05\ExchangeApp\ExchangeApp\bin\Debug\ExchangeApp.pdb
+C:\Books\Office365\Chapter05\ExchangeApp\ExchangeApp\obj\Debug\ExchangeApp.csprojResolveAssemblyReference.cache
+C:\Books\Office365\Chapter05\ExchangeApp\ExchangeApp\obj\Debug\MainWindow.baml
+C:\Books\Office365\Chapter05\ExchangeApp\ExchangeApp\obj\Debug\MainWindow.g.cs
+C:\Books\Office365\Chapter05\ExchangeApp\ExchangeApp\obj\Debug\App.g.cs
+C:\Books\Office365\Chapter05\ExchangeApp\ExchangeApp\obj\Debug\ExchangeApp_MarkupCompile.cache
+C:\Books\Office365\Chapter05\ExchangeApp\ExchangeApp\obj\Debug\ExchangeApp.g.resources
+C:\Books\Office365\Chapter05\ExchangeApp\ExchangeApp\obj\Debug\ExchangeApp.Properties.Resources.resources
+C:\Books\Office365\Chapter05\ExchangeApp\ExchangeApp\obj\Debug\ExchangeApp.csproj.GenerateResource.Cache
+C:\Books\Office365\Chapter05\ExchangeApp\ExchangeApp\obj\Debug\ExchangeApp.exe
+C:\Books\Office365\Chapter05\ExchangeApp\ExchangeApp\obj\Debug\ExchangeApp.pdb

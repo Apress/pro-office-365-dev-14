@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.OData.Edm</id>
+    <version>6.2.0</version>
+    <title>EdmLib</title>
+    <authors>Microsoft Corporation</authors>
+    <owners>Microsoft Corporation</owners>
+    <licenseUrl>http://go.microsoft.com/?linkid=9809688</licenseUrl>
+    <projectUrl>http://go.microsoft.com/fwlink/?LinkId=220868</projectUrl>
+    <iconUrl>http://static.tumblr.com/hgchgxz/9ualgdf98/icon.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Classes to represent, construct, parse, serialize and validate entity data models. Supports OData v4 only. Targets .NET Portable Lib with support for .NET 4.0, SL 5.0, Win Phone 8, and Win 8. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.
+OData .NET library is open source at http://odata.codeplex.com</description>
+    <releaseNotes>What is in the release:
+ 
+Bug fixes: 
+
+•   Fixed a bug for parsing $it in UriParser
+
+•   Improved the JSON serialization performance for unindented format
+ 
+New Features: 
+
+•   ODataLib &amp; EdmLib now supports complex type inheritance and open complex type. 
+
+•   ODataLib &amp; EdmLib now supports open collection property in entity and complex type. 
+
+•   OData Client now supports property level change tracking for PATCH.
+DataServiceCollection now supports property level change tracking. By default only changed properties will be included in the payload for update (PATCH) operations, unless you explicitly use SaveChangesOptions.ReplaceOnUpdate when calling SaveChanges(). The entity level change tracking behavior is not changed in DataServiceCollection.
+ 
+•   OData Client supports using different type/property name than the name in metadata by OrginalNameAttribute
+Previously the type and property name in proxy class must be same as metadata. Now you can use over-write the type/property name by using OriginalNameAttribute:
+ 
+    [global::Microsoft.OData.Client.OriginalNameAttribute("product")]    
+    public partial class Product
+    {
+        // Using camel case in metadata	
+        [global::Microsoft.OData.Client.OriginalNameAttribute("name")]
+        // Using Pascal case in proxy class
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+ 
+•   ODataLib support generating ServiceDocument from EdmModel directly by extension method GenerateServiceDocument().
+ 
+Known Issues:
+
+•   Type casting for complex type in $filter and $select is not supported.
+
+•   Reading individual property of derived complex type directly by OData Client is not supported.</releaseNotes>
+    <tags>wcf data services odata odatalib edmlib spatial ado.net ef entity framework open protocol wcfds wcfdataservices dataservices</tags>
+  </metadata>
+</package>

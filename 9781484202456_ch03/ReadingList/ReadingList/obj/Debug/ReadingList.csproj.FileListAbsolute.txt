@@ -1,0 +1,3 @@
+C:\Books\Office365\Chapter03\ReadingList\ReadingList\bin\Debug\ReadingList.pdb
+C:\Books\Office365\Chapter03\ReadingList\ReadingList\obj\Debug\ReadingList.dll
+C:\Books\Office365\Chapter03\ReadingList\ReadingList\obj\Debug\ReadingList.pdb

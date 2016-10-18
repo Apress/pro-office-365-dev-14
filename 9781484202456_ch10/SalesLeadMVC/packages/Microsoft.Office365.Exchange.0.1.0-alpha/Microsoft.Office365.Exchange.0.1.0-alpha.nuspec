@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Office365.Exchange</id>
+    <version>0.1.0-alpha</version>
+    <title>Microsoft Office 365 Mail, Calendar and Contacts Library for .NET</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=398198</licenseUrl>
+    <projectUrl>http://go.microsoft.com/fwlink/?LinkId=398199</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET Client Library for Office 365 Mail, Calendar and Contacts API.
+
+Learn more about how to use this library @ http://aka.ms/ClientLibraries.</description>
+    <summary>.NET Client Library for Office 365 Mail, Calendar and Contacts API</summary>
+    <releaseNotes>http://aka.ms/ClientLibraries</releaseNotes>
+    <copyright>Copyright © Microsoft Corporation</copyright>
+    <tags>Microsoft Office Office365 Service REST</tags>
+    <dependencies>
+      <dependency id="Microsoft.OData.Client" version="6.2.0" />
+    </dependencies>
+  </metadata>
+</package>

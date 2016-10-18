@@ -1,0 +1,53 @@
+﻿@model SalesLeadMVC.Models.LeadContactViewModel
+
+<h2>Leads</h2>
+
+@using (Html.BeginForm("Index"))
+{
+    <table width="800">
+        <thead>
+            <tr>
+                <th>Select Lead</th>
+                <th>
+                    Lead Information
+                </th>
+                <th>
+                    Date Received
+                </th>
+                <th>
+                    Product Request
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        @foreach (SalesLeadMVC.Models.LeadInfo lead in Model.leads)
+        {
+            <tr>
+                <td style="vertical-align:middle;">
+                    <input type="radio" id="selectedLeadID" name="selectedLeadID" value="@lead.ID" />
+                </td>
+                <td style="white-space: pre-line;">
+                    @lead.message
+                </td>
+                <td>
+                    @lead.dateReceived
+                </td>
+                <td>
+                    @lead.productRequest
+                </td>
+                <td>@Html.ActionLink("Set Appointment", "LeadAppointment", new { leadID = lead.ID })</td>
+            </tr>
+        }
+    </table>
+    <fieldset>
+        <legend>Assign Lead</legend>
+
+        <label>Sales Person:</label>
+        @Html.DropDownListFor(x => x.selectedSalesStaffID, new SelectList(Model.salesStaff, "ID", "name"), "Select a Contact")
+
+        <label></label>
+        <input type="submit" value="Submit" />
+    </fieldset>
+}
+
+
